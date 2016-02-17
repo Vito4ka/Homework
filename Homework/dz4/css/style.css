@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #0c739f url(../img/background.png) repeat-x ;
+  font: 12px Tahoma;
+
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: white;
+}
+header {
+  width: 100%;
+  height: 213px;
+}
+.logo {
+  float: left;
+  padding: 15px 25px;
+  position: relative;
+}
+.logo p {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  color: #128aa7;
+}
+.contacts {
+  float: right;
+  margin: 10px 30px;
+  color: #128aa7;
+line-height: 25px;
+}
+/*Countries*/
+.countries {
+  clear: right;
+  float: right;
+  padding-right: 20px;
+}
+.countries li {
+  float: left;
+  margin: 5px;
+  list-style-type: none;
+  font-size: 10px;
+}
+.countries a {
+  color: #128aa7;
+  text-decoration: underline;
+  text-align: center;
+}
+.countries img {
+  padding: 5px;
+}
+hr {
+  width: 100%;
+  color:#128aa7;
+}
+.big {
+  width: 100%;
+}
+.clearfix:after {
+  content: ' ';
+  clear: both;
+  display: block;
+}
+
+/*Main menu*/
+ul {
+  list-style: none;
+  font-size: 14px;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+    width: 14.27%;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: #777777;
+}
+.small {
+  width: 5px;
+  height: 5px;
+  padding-left: 5px;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 35px;
+    left: 0;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #333333;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+    background-color: #444444;
+
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+/*Sidebars*/
+.sidebar_left {
+  float: left;
+  width: 21%;
+}
+.sidebar_right {
+  float: right;
+  width: 21%;
+}
+.page {
+  float: right;
+  width: 58%;
+}
+h2 {
+  text-align: center;
+  font-size: 18px;
+}
+.content {
+  color: #4d574f;
+  font-size: 16px;
+  padding: 25px;
+  line-height: 1.5;
+}
+footer {
+  text-align: center;
+  color: white;
+}
