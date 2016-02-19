@@ -32,6 +32,7 @@ a {
   line-height: 35px;
   color: #60b5ed;
   text-decoration: none;
+  padding: 0 10px;
 }
 ul.menu > li > a:hover {
     background-color: #4eabda;
@@ -42,7 +43,7 @@ ul.menu > li > a:hover {
   padding-right: 10px;
 }
 .box {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.63);
   /*opacity: 0.631;*/
   position: absolute;
   left: 353px;
@@ -77,14 +78,25 @@ input {
   border-bottom: 1px solid #888; /*484948;*/
 }
 input:hover {
-  background-color: #111;
-  color: #ccc;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);  
+  background-color: #1b5288;
+  color: #fff;
+  box-shadow: 0 0 5px 5px #699ccd;
+  border-bottom: 1px solid #ccf; /*484948;*/
 }
 label {
   color: #ccc;
 }
+#last input {
+  background: #3889cb (url="../img/button.png");
+}
 .left {
   width: 20px;
   height: 10px;
+}
+p.bottom {
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  font-size: 10px;
+  color: #ccc;
 }
