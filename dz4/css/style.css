@@ -81,6 +81,7 @@ ul.menu {
 ul.menu > li {
     float: left;
     position: relative;
+    text-align: center;
     width: 142px;
 }
 ul.menu > li > a {
