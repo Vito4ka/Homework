@@ -50,7 +50,7 @@ ul.main > li > a:hover {
 }
 ul.horizontal > li > a {
     display: block;
-    padding: 10px 60px;
+    padding: 8px 60px;
 }
 .wrapper {
   margin-top: 40px;
