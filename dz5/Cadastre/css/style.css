@@ -59,29 +59,24 @@ ul {
     padding-left: 10px;
     padding-right: 10px;
 }
-li.ola {
-  color: #fff;
-}
 a.minhas {
   color: #fff;
 }
 li.ola {
   padding: 0 10px;
+  color: #fff;
   background: linear-gradient(to bottom, #4faedb, #2e7ac4);
   border: solid #4299d2;
   border-width: thin;
 }
 li.ola a {
-  line-height: 34px;
   padding: 0;
   display: inline;
   color: #fff;
   text-decoration: underline;
 }
 .box {
-    background-color: rgba(0, 0, 0, 0.63);
-    /*opacity: 0.631;*/
-
+    background-color: rgba(0, 0, 0, 0.63);    /*opacity: 0.631;*/
     position: absolute;
     left: 353px;
     top: 249px;
