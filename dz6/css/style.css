@@ -22,9 +22,6 @@ header p {
   color: rgb( 94, 105, 109 );
   line-height: 1.415;
   text-align: center;
-  -moz-transform: matrix( 0.90909090909091,0,0,0.909375,0,0);
-  -webkit-transform: matrix( 0.90909090909091,0,0,0.909375,0,0);
-  -ms-transform: matrix( 0.90909090909091,0,0,0.909375,0,0);
 }
 .login-section {
   position: absolute;
@@ -59,7 +56,6 @@ box-shadow: 1.5px 2.598px 3px 0px rgb( 150, 150, 150 );
   background-color: white;
 
 }
-
 header img {
   padding-top: 6px;
 }
@@ -72,19 +68,17 @@ nav ul {
   padding-left: 130px;
   list-style: none;
 }
-li {
+nav ul li {
     float: left;
     position: relative;
 }
-a {
+nav ul li a {
     display: block;
+    padding: 0 16px;
+    line-height: 35px;
     color: #60b5ed;
     letter-spacing: 0.05em;
     text-decoration: none;
-}
-nav > ul > li > a {
-    padding: 0 16px;
-    line-height: 35px;
 }
 nav ul > li > a:hover {
     background-color: #4eabda;
@@ -119,7 +113,6 @@ main {
   margin-bottom: 36px;
 }
 .left-side {
-  padding-left: 30px;
   width: 190px;
   height: 400px;
   float: left;
@@ -132,10 +125,7 @@ main {
   height: 629px;
   float: left;
   border-radius: 3px;
-  background-image: -moz-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(35,75,93) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
-
+  background: linear-gradient(to bottom, #e4e7e8, #94a7b0);
 }
 .right-side {
   width: 186px;
@@ -149,6 +139,40 @@ main {
   width: 676px;
   height: 27px;
 margin-left: 117px;
+}
+h2, h3 img {
+  margin: 0px 2px;
+  float: left;
+}
+h2, h3 {
+  display: inline-block;
+  margin: 3px -2px 14px -1px;
+  height: 25px;
+  border: 1px solid rgb( 155, 161, 163 );
+  border-radius: 13px;
+  font-size: 12px;
+  line-height: 25px;
+  color: #114165;
+}
+h2 {
+  width: 181px;
+  box-shadow: 1.5px 2.598px 3px 0px rgb( 150, 150, 150 );
+}
+h3 {
+  width: 151px;
+}
+li {
+  display: inline-block;
+}
+.left-side ul li {
+  list-style: circle;
+}
+.left-side a {
+  color: #114165;
+  text-decoration: none;
+}
+.left-side a:hover {
+  text-decoration: underline;
 }
 footer {
   margin-top: 21px;
@@ -168,7 +192,7 @@ footer {
     float: right;
 }
 .clearfix:after {
-  content: "";
+  content: " ";
   display: table;
   clear: both;
 }
