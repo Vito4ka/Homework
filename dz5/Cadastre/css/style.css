@@ -38,7 +38,7 @@ li {
   line-height: 35px;
 
 }
-a {
+.menu a {
   display: block;
   line-height: 35px;
   padding: 0 10px;
@@ -51,7 +51,7 @@ ul {
     color: #60b5ed;
     text-decoration: none;
 }
-.menu a:hover {
+a.hovered:hover {
     background-color: #4eabda;
     color: white;
 }
