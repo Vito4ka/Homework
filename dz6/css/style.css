@@ -241,7 +241,7 @@ section.search section.disk {
     font-size: 14px;
     text-transform: lowercase;
 }
-/*-----end of first form - ATO-SEARCH------*/
+/*-----end of first form - AVTO-SEARCH------*/
 .bus_search_wrapper
 .bus_search {
    position: relative;
@@ -391,17 +391,11 @@ section.search section.disk {
 /*------------------------END OF SEARCH FORMS--------------------------------------*/
 /*------------------------START OF CONTENT--------------------------------------*/
 .content {
-   width: 527px;
-   float: left;
-   margin-top: 15px;
-   margin-left: 8px;
-   margin-right: 8px;
-   padding-top: 16px;
-   background: #c9cfd1; /* Old browsers */
-   background: -moz-linear-gradient(top,  #e4e7e8 0%, #94a7b0 70%); /* FF3.6-15 */
-   background: -webkit-linear-gradient(top,  #e4e7e8 0%, #94a7b0 70%); /* Chrome10-25,Safari5.1-6 */
-   background: linear-gradient(to bottom,  #e4e7e8 0%, #94a7b0 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9cfd1', endColorstr='#234b5d',GradientType=0 ); /* IE6-9 */
+  width: 525px;
+  height: 629px;
+  float: left;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #e4e7e8, #94a7b0);
 }
 
 .content .row {
@@ -426,6 +420,24 @@ section.search section.disk {
    border: 1px solid #cfd4d6;
    background-color: white;
    border-radius:  5px;
+}
+figura {
+  display: block; /* Блочный элемент */
+   width: 135px;
+   height: 127px;
+   margin-bottom: 3px;
+   margin-right: -3px;
+   border: 1px solid #cfd4d6;
+   background-color: white;
+   border-radius:  5px;
+}
+figura img {
+  padding: 4px;
+}
+figcaption span {
+   color: #114165;
+   font-weight: bold;
+   font-size: 16px;
 }
 
 
