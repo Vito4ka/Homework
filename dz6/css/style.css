@@ -5,7 +5,7 @@
 body {
   margin: 0 auto;
   padding: 17px 46px 0 45px;
-  width: 919px;
+  width: 909px;
   position: relative;
   background-color: white;
   font-size: 12px;
@@ -106,7 +106,7 @@ header img.mp {
 /*------------------END OF HEADER------------------*/
 /*------------------Main Menu --------------------------*/
 nav {
-   height: 17px;
+   height: 15px;
    padding: 5px 0 13px 0;
    margin-top: 4px;
    border-radius: 5px;
@@ -128,22 +128,19 @@ nav ul li a{
    text-decoration: none;
    font-size: 14px;
 }
-nav ul li:hover {
+.main-menu li:hover {
   background: linear-gradient(to bottom,  #1f6585 0%,#0c3357 100%);
 }
-
-nav li:nth-last-child(2) img{
+.basket p {
+  color: #b1bcc0;
+  font-size: 11px;
+}
+ul.basket li img{
    text-align: center;
-   margin-bottom: -8px;
-   margin-left: 52px;
+   margin-bottom: -4px;
+   margin-left: 30px;
 }
-
-nav li:nth-last-child(2),.menu li:last-child {
-   color: #b1bcc0;
-   font-size: 11px;
-}
-
-nav li span {
+.basket span {
     color: #0d5689;
     font-weight: bold;
     font-size: 12px;
@@ -157,7 +154,7 @@ nav li span {
 }
 .search section {
   height: 134px;
-  margin: 11px 10px 0 4px;
+  margin: 11px 8px 0 4px;
   float: left;
   border: 2px solid #b6b6b7;
   border-radius: 18px;
@@ -349,7 +346,7 @@ section.disk {
    padding: 6px 15px 9px 9px;
    width:242px;
    height: 116px;
-   border: 2px solid #b6b6b7;
+   border: 1px solid #b6b6b7;
    border-radius: 15px;
    box-shadow: 2px 2px 8px 0px rgba(150,150,150,1);
 }
@@ -410,7 +407,7 @@ main {
   margin-bottom: 36px;
 }
 .left-side {
-  width: 190px;
+  width: 192px;
   height: 400px;
   float: left;
 }
