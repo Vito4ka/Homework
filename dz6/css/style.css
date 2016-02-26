@@ -512,6 +512,7 @@ figcaption span {
     color: #114165;
     font-weight: bold;
     font-size: 16px;
+    font-style: italic;
 }
 
  .content .row .color {
@@ -549,7 +550,10 @@ input[type="checkbox"] {
    margin-top: 19px;
    margin-left:27px;
 }
-
+.right-side h3 {
+  margin-left: 19px;
+  margin-top: 2px;
+}
 .brand {
   width: 676px;
   height: 27px;
@@ -571,6 +575,7 @@ footer ul li {
    margin-right: 5px;
    padding-right:  11px;
    padding-left:  11px;
+   list-style: none;
    border-left: 1px solid #bec6c9;
 }
 
