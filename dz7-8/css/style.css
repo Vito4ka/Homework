@@ -86,7 +86,8 @@ header {
 }
 .navbar-left {
     float: left;
-}
+    margin-bottom: 28px;
+  }
 .navbar-right {
     position: relative;
     float: right;
@@ -252,11 +253,16 @@ header {
         display: none;
     }
 }
+/*-------------------------aside--slider-----------------------------*/
 aside {
     background: rgba(0, 0, 0, 0.2);
     margin-top: 165px;
     box-sizing: border-box;
 }
+@media (max-width: 959px) {
+  aside {
+      margin-top: 75px;
+  }
 .box1 {
     position: relative;
     top: -17px;
@@ -521,6 +527,14 @@ img.iphone {
 .news__col:first-child {
     margin-left: 0;
 }
+@media (max-width: 959px) {
+   .about__title {
+     font-size: 24px;
+     line-height: 24px;
+     margin-bottom: 4px;
+     }
+   }
+
 @media (max-width: 767px) {
     .news__col {
         width: 100%;
