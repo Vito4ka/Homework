@@ -262,6 +262,7 @@ aside {
 @media (max-width: 959px) {
   aside {
       margin-top: 75px;
+    }
   }
 .box1 {
     position: relative;
