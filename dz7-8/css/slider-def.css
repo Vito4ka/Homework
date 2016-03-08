@@ -4,6 +4,14 @@
 .content-txt{
   animation:content-s 7.5s infinite;
 }
+.on{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background:#e7e7e7;
+  position:relative;
+  animation:on 30s infinite;
+}
 
 /* Animation */
 @keyframes slide{
@@ -44,4 +52,30 @@
   80%{left:-500px;}
   90%{left:-500px;}
   100%{left:-500px;}
+}
+@keyframes on{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:22px;
+  }
+  46%{
+    margin-left:22px;
+  }
+  50%{
+    margin-left:44px;
+  }
+  71%{
+    margin-left:44px;
+  }
+  75%{
+    margin-left:66px;
+  }
+  96%{
+    margin-left:66px;
+  }
 }
