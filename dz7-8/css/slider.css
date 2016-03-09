@@ -36,7 +36,7 @@
   }
 }
 @keyframes content-s{
-  0%{left:-500px;}
+  0%{left:-510px;}
   10%{left:20px;}
   15%{left:0px;}
   30%{left:0px;}
@@ -44,9 +44,9 @@
   50%{left:0px;}
   60%{left:0px;}
   70%{left:0px;}
-  80%{left:-500px;}
-  90%{left:-500px;}
-  100%{left:-500px;}
+  80%{left:-510px;}
+  90%{left:-510px;}
+  100%{left:-510px;}
 }
 @keyframes on{
   0%,100%{

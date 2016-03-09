@@ -256,7 +256,7 @@ header {
 /*-------------------------aside--slider-----------------------------*/
 aside {
     background: rgba(0, 0, 0, 0.2);
-    margin-top: 165px;
+    margin-top: 137px;
     box-sizing: border-box;
 }
 @media (max-width: 959px) {
