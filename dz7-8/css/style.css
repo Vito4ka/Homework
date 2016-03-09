@@ -747,57 +747,6 @@ img.iphone {
         display: block;
     }
 }
-.slider-mini__pager {
-    bottom: -40px;
-    left: 40.5%;
-}
-@media (max-width: 959px) {
-    .slider-mini__pager {
-        bottom: -40px;
-        left: 36.5%;
-    }
-}
-@media (max-width: 767px) {
-    .slider-mini__pager {
-        left: 39%;
-    }
-}
-@media (max-width: 767px) {
-    .slider-mini__pager {
-        left: 39%;
-    }
-}
-.slider-mini__pager span {
-    background: white;
-    box-sizing: border-box;
-    border: 1px solid #f0f0f0;
-}
-@media (max-width: 959px) {
-    .slider-mini__pager span {
-        height: 17px;
-        width: 17px;
-        margin-right: 5px;
-    }
-}
-.slider-mini__pager span.cycle-pager-active:after,
-.slider-mini__pager span:hover:after,
-.slider-mini__pager span:active:after {
-    top: 1px;
-    left: 1px;
-    border: 1px solid #454545;
-    background: linear-gradient(to top, #454545, #6a6a6a);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-@media (max-width: 959px) {
-    .slider-mini__pager span.cycle-pager-active:after,
-    .slider-mini__pager span:hover:after,
-    .slider-mini__pager span:active:after {
-        top: 2px;
-        left: 2px;
-    }
-}
 /*----article-------------------------------------- */
 
 .categor {
