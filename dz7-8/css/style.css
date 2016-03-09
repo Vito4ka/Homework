@@ -399,6 +399,13 @@ aside {
 .switch ul {
     overflow: hidden;
 }
+.on{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background:#e7e7e7;
+  position:relative;
+}
 .image img {
     width: 100%;
 }
