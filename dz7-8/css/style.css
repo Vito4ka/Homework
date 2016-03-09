@@ -415,32 +415,32 @@ img.iphone {
 }
 .slider__prev {
     left: -4%;
-    background: url('../img/ icons.png') 0 0 no-repeat;
+    background: url('../img/icons.png') 0 0 no-repeat;
     width: 30px;
     height: 42px;
 }
-@media only screen and (max-width: 1055px) {
+@media only screen and (max-width: 959px) {
     .slider__prev {
         left: -1%;
     }
 }
-@media only screen and (max-width: 505px) {
+@media only screen and (max-width: 479px) {
     .slider__prev {
         left: 3%;
     }
 }
 .slider__next {
     right: -4%;
-    background: url('../img/ icons.png') 0 -52px no-repeat;
+    background: url('../img/icons.png') 0 -52px no-repeat;
     width: 30px;
     height: 42px;
 }
-@media only screen and (max-width: 1055px) {
+@media only screen and (max-width: 959px) {
     .slider__next {
         right: -1%;
     }
 }
-@media only screen and (max-width: 505px) {
+@media only screen and (max-width: 479px) {
     .slider__next {
         right: 3%;
     }
@@ -954,7 +954,7 @@ i-play {
 }
 @media (max-width: 767px) {
     .i-play {
-        background: url('../img/ i-play_mini.png') 0 0 no-repeat;
+        background: url('../img/i-play_mini.png') 0 0 no-repeat;
         width: 52px;
         height: 52px;
         top: 95px;
