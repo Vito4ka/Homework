@@ -352,17 +352,14 @@ aside {
     float: right;
     width: 43%;
     text-align: center;
-    height: 435px;
-    line-height: 435px;
+    height: 434px;
+    line-height: 434px;
 }
 .image {
-    width: 46%;
-    height: 100%;
-    display: block;
-    float: right;
     text-align: center;
-  /*  height: 434px;
-    line-height: 434px;*/
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
 }
 .content {
     width: 54%;
@@ -409,13 +406,7 @@ aside {
   position:relative;
 }
 /*-------------*/
-.image img {
-    width: 100%;
-}
-img.iphone {
-    padding: 0 66px 0 99px;
-    box-sizing: border-box;
-}
+
 .slider-prev, .slider-next {
   position: absolute;
   top: 50%;
