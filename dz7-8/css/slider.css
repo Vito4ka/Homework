@@ -4,7 +4,7 @@
 .content-txt{
   animation:content-s 7.5s infinite;
 }
-.on{
+.switch__on{
   animation:on 30s infinite;
 }
 
@@ -50,27 +50,27 @@
 }
 @keyframes on{
   0%,100%{
-    margin-left:0%;
+    margin-left:3px;
   }
   21%{
-    margin-left:0%;
+    margin-left:3px;
   }
   25%{
-    margin-left:22px;
+    margin-left:25px;
   }
   46%{
-    margin-left:22px;
+    margin-left:25px;
   }
   50%{
-    margin-left:44px;
+    margin-left:47px;
   }
   71%{
-    margin-left:44px;
+    margin-left:47px;
   }
   75%{
-    margin-left:66px;
+    margin-left:69px;
   }
   96%{
-    margin-left:66px;
+    margin-left:69px;
   }
 }

@@ -399,13 +399,16 @@ aside {
 .switch ul {
     overflow: hidden;
 }
-.on{
-  width:100%;
-  height:100%;
+.switch__on{
+  width:60%;
+  height:60%;
+  margin-top: 3px;
   border-radius:50%;
   background:#e7e7e7;
+  box-sizing: border-box;
   position:relative;
 }
+/*-------------*/
 .image img {
     width: 100%;
 }
@@ -413,35 +416,35 @@ img.iphone {
     padding: 0 66px 0 99px;
     box-sizing: border-box;
 }
-.slider__prev {
+.slider-prev, .slider-next {
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 42px;
+  cursor:  pointer;
+ }
+
+.slider-prev {
     left: -4%;
     background: url('../img/icons.png') 0 0 no-repeat;
-    width: 30px;
-    height: 42px;
+}
+.slider-next {
+  right: -4%;
+  background: url('../img/icons.png') 0 -52px no-repeat;
 }
 @media only screen and (max-width: 959px) {
-    .slider__prev {
+    .slider-prev {
         left: -1%;
     }
-}
-@media only screen and (max-width: 479px) {
-    .slider__prev {
-        left: 3%;
-    }
-}
-.slider__next {
-    right: -4%;
-    background: url('../img/icons.png') 0 -52px no-repeat;
-    width: 30px;
-    height: 42px;
-}
-@media only screen and (max-width: 959px) {
-    .slider__next {
+    .slider-next {
         right: -1%;
     }
 }
 @media only screen and (max-width: 479px) {
-    .slider__next {
+    .slider-prev {
+        left: 3%;
+    }
+    .slider-next {
         right: 3%;
     }
 }
@@ -691,6 +694,11 @@ img.iphone {
         padding-left: 4px;
     }
 }
+.slider-mini__content h3 a {
+  text-decoration: none;
+  color: #edbfff;
+}
+
 .slider-mini:before {
     content: "";
     position: absolute;
