@@ -153,23 +153,39 @@ header {
     }
 }
 @media (max-width: 767px) {
-    .menu--vertical {
+    .menu--vertical .menu__active {
+        display: block;
+      }
+      .menu--vertical .menu__active a:hover {
+        cursor: pointer;
+      }
+/*-----hide---------------*/
+    .menu--vertical ul {
+      display: none;
+      border: none;
+      background-color: transparent;
+      box-shadow: none;
+/*-----------------------*/
         position: absolute;
         top: 0px;
         left: 50%;
         margin-left: -122px;
-        z-index: 100;
+      /*  z-index: 100;*/
         width: 244px;
-        display: inline-block;
         overflow: hidden;
         border-radius: 7px;
         opacity: 0.9;
-        border: 1px solid #041016;
         text-align: center;
+      }
+   .menu--vertical ul:hover {
+       display: inline-block;
+        border: 1px solid #041016;
         background-color: #35293d;
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
     }
     .menu--vertical li {
+        display: none;
+        background-color: transparent;
         float: none;
         margin-left: 0;
         box-sizing: border-box;
@@ -177,7 +193,10 @@ header {
         height: 40px;
         line-height: 40px;
         opacity: 0.9;
-        background-color: #35273d;
+    }
+    .menu--vertical ul:hover li {
+      display: block;
+      background-color: #35273d;
     }
     .menu--vertical li:first-child > a {
         box-shadow: none;
@@ -208,28 +227,9 @@ header {
         border-bottom: 2px solid #edbfff;
         cursor: default;
     }
+  }
     /* .menu--vertical .menu__active a { display: inline; }*/
-}
 /*--------------------------------------------------------------------------------*/
-
-@media (max-width: 479px) {
-    .menu--hide {
-        border: none;
-        background-color: transparent;
-        box-shadow: none;
-    }
-    .menu--hide li {
-        display: none;
-        background-color: transparent;
-    }
-    .menu--hide .menu__active {
-        display: block;
-    }
-    .menu--hide .menu__active a:hover {
-        cursor: pointer;
-    }
-}
-/*-------------------------------------------------------------- */
 
 .menu--bottom li:first-child {
     margin-left: 0;
@@ -268,10 +268,10 @@ aside {
     position: relative;
     top: -17px;
 }
-@media (max-width: 767px) {
-    .A768 {
-        display: none;
-    }
+.slider img {
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 .slider__left {
     color: #fefefe;
@@ -279,11 +279,17 @@ aside {
     padding-right: 5px;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
-.slider__img {
-    text-align: center;
-    width: 100%;
-    height: 100%;
+.content-txt {
+  width: 517px;
 }
+.image {
+      float: right;
+      text-align: center;
+      width: 434px;
+      height: 434px;
+      line-height: 434px;
+      vertical-align: middle;
+  }
 .slider__headline {
     font-size: 58px;
     line-height: 60px;
@@ -301,7 +307,10 @@ aside {
     overflow: hidden;
     max-height: 170px;
 }
-@media only screen and (max-width: 959px) {
+@media (max-width: 959px) {
+  .content-txt {
+      width: 330px;
+    }
     .slider__headline {
         font-size: 48px;
         line-height: 48px;
@@ -317,7 +326,15 @@ aside {
         height: 110px;
     }
 }
-@media only screen and (max-width: 767px) {
+@media  (max-width: 767px) {
+  .content-txt {
+      width: 168px;
+    }
+    .image {
+          width: 304px;
+          height: 304px;
+          line-height: 304px;
+      }
     .slider__headline {
         font-size: 36px;
         line-height: 36px;
@@ -329,8 +346,20 @@ aside {
     .slider__text {
         display: none;
     }
+    .content {
+        margin-right: -130px;
+    }
+
+
 }
-@media only screen and (max-width: 479px) {
+@media  (max-width: 479px) {
+  .image {
+    display: none;
+  }
+    .content, .content-txt, .slider__left {
+      width: 100%;
+      text-align: center;
+    }
     .slider__title {
         max-width: 100%;
     }
@@ -348,27 +377,15 @@ aside {
     height: 100%;
     float: left;
 }
-.slider__right {
-    float: right;
-    width: 43%;
-    text-align: center;
-    height: 434px;
-    line-height: 434px;
-}
-.image {
-    text-align: center;
-    max-width: 100%;
-    height: 100%;
-    vertical-align: middle;
-}
 .content {
-    width: 54%;
     height: 100%;
+    margin-right: -30px; /*чтоб не накрывался откат*/
     float: left;
     overflow: hidden;
 }
 .content-txt {
     padding-top: 94px;
+    margin-right: 20px;/*чтоб не накрывался откат слайда*/
     float: left;
     position: relative;
 }
