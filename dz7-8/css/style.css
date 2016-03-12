@@ -60,10 +60,11 @@ header {
     background: #af9fb1 url(../img/bg.jpg) no-repeat;
     background-position: center top;
     border-bottom: 1px solid #33253a;
-    padding-bottom: 103px;
+    padding-bottom: 167px;
 }
 .container {
     max-width: 960px;
+    padding-left: 25px;
     margin: 0 auto;
     position: relative;
 }
@@ -131,7 +132,7 @@ header {
     margin-left: 0;
 }
 .menu a {
-    padding: 0 5px;
+    padding: 0 4px;
     text-decoration: none;
     color: white;
     font-family: "LeagueGothic";
@@ -251,6 +252,7 @@ header {
 }
 /*-------------------------aside--slider-----------------------------*/
 aside {
+  position: relative;
     background: rgba(0, 0, 0, 0.2);
     margin-top: 137px;
     box-sizing: border-box;
@@ -263,6 +265,7 @@ aside {
 .box1 {
     position: relative;
     top: -17px;
+    margin-bottom: -35px;
 }
 .slider img {
   text-align: center;
@@ -276,7 +279,7 @@ aside {
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 .content-txt {
-  width: 517px;
+  width: 490px;
 }
 .image {
       float: right;
@@ -305,7 +308,7 @@ aside {
 }
 @media (max-width: 959px) {
   .content-txt {
-      width: 317px;
+      width: 300px;
     }
     .slider__headline {
         font-size: 48px;
@@ -324,7 +327,7 @@ aside {
 }
 @media  (max-width: 767px) {
   .content-txt {
-      width: 156px;
+      width: 140px;
     }
     .image {
           width: 304px;
@@ -391,8 +394,8 @@ aside {
     width: 123px;
     height: 13px;
     position: absolute;
-    bottom: -42px;
-    right: 125px;
+    bottom: -105px;
+    right: 110px;
 }
 .switch > ul {
     list-style: none;
@@ -422,35 +425,19 @@ aside {
 
 .slider-prev, .slider-next {
   position: absolute;
-  top: 50%;
+  top: 35%;
   width: 27px;
   height: 42px;
   cursor:  pointer;
  }
 
 .slider-prev {
-    left: -4%;
+    left: 0;
     background: url('../img/icons.png') 0 0 no-repeat;
 }
 .slider-next {
-  right: -4%;
+  right: 0;
   background: url('../img/icons.png') 0 -52px no-repeat;
-}
-@media only screen and (max-width: 959px) {
-    .slider-prev {
-        left: -1%;
-    }
-    .slider-next {
-        right: -1%;
-    }
-}
-@media only screen and (max-width: 479px) {
-    .slider-prev {
-        left: 3%;
-    }
-    .slider-next {
-        right: 3%;
-    }
 }
 /*-------------------------col-------------------------------------------------*/
 
@@ -897,14 +884,14 @@ aside {
     width: 78px;
     height: 65px;
 }
-i-play {
+.i-play {
     position: absolute;
     top: 132px;
-    left: 71.5%;
-    z-index: 112;
-    background: url('../img/ play.png') 0 -137px no-repeat;
-    width: 70px;
-    height: 70px;
+    left: 80%;
+    z-index: 12;
+    background: url('../img/i-play.png') no-repeat;
+    width: 76px;
+    height: 76px;
     cursor: pointer;
 }
 @media (max-width: 959px) {
@@ -915,7 +902,7 @@ i-play {
 }
 @media (max-width: 767px) {
     .i-play {
-        background: url('../img/i-play_mini.png') 0 0 no-repeat;
+        background: url('../img/i-play_mini.png') no-repeat;
         width: 52px;
         height: 52px;
         top: 95px;
