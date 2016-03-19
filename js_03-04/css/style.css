@@ -11,13 +11,13 @@ body {
   margin: 0 auto;
   padding-bottom: 30px;
   background-color: white;
-font-family: Arial, Tahoma;
-font-size: 19px;
-line-height: 40px;
+  font-family: Arial, Tahoma;
+  font-size: 19px;
+  line-height: 40px;
 }
 p {
   padding-top: 13px;
-text-align: center;
+  text-align: center;
 }
 ol {
   padding-top: 26px;
