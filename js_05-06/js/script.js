@@ -1,10 +1,24 @@
+var elemStart = document.getElementById('start');
+elemStart.addEventListener('click', startStopTimer);
+var elemStart = document.getElementById('split');
+elemStart.addEventListener('click', splitTimer);
+var elemStart = document.getElementById('reset');
+elemStart.addEventListener('click', resetTimer);
+
 var time = {};
 time.flag = 0;    //timer is stopped
 
+function startStopTimer(){
+  if (time.flag==1) stopTimer();
+  else startTimer();
+}
+
 function startTimer() {
+    time.flag = 1;
+    var elemStart = document.getElementById('start');
+    elemStart.setAttribute("value", "Stop");
     time.start = callTime();// Remember when we started
     time.id = setInterval(function () {
-  	 if (time.flag==1) return; //Is working. No other pcs
      time.last = callTime()-time.start;
      displayTime();
    }, 19);
@@ -15,7 +29,7 @@ function callTime(){
 function displayTime(){
   var d = new Date;
   d.setTime(time.last);
-  var h=d.getHours()-2; //time zone
+  var h=d.getUTCHours();
   var m=d.getMinutes();
   var s=d.getSeconds();
   var ms=d.getMilliseconds();
@@ -32,6 +46,9 @@ function addZero(x,n) {
 function stopTimer(){
   clearInterval(time.id);
   time.flag = 0;
+  var elemStart = document.getElementById('start');
+  elemStart.setAttribute("value", "Start");
+
 };
 function resetTimer(){
   stopTimer();
