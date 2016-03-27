@@ -5,6 +5,7 @@
     <title>js_09-10 Теплова Виктория</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.selectbox.css">
+    <link rel="stylesheet" href="css/checkbox.css">
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
     <script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
@@ -46,6 +47,7 @@
           <option value="08">Ultra-violet</option>
         </select>
         <div class="clr"></div>
+      </div>
 
       </div>
       <div class="clr check">
@@ -53,16 +55,25 @@
         <div><label for="ch2">label 2</label><input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" /></div>
         <div><label for="ch3">label 3</label><input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" /></div>
       </div>
+      <section title=".slideThree">
+          <!-- .slideThree -->
+          <span>label1</span>
+          <div class="slideThree">
+            <input type="checkbox" value="None" id="slide1" name="check" checked />
+            <label for="slide1"></label>
+          </div>
+          <div class="slideThree">
+            <input type="checkbox" value="None" id="slide2" name="check" />
+            <label for="slide2"></label>
+          </div>
+          <div class="slideThree">
+            <input type="checkbox" value="None" id="slide3" name="check" checked />
+            <label for="slide3"></label>
+          </div>
+        </div>
+          <!-- end .slideThree -->
+      </section>
 
-
-
-</div>
-
-
-
-  </div>
-
-
-
-   </body>
+      </div>
+</body>
 </html>
