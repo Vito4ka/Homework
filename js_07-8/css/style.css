@@ -96,3 +96,6 @@ fieldset>div {
   background: #FFF6BD;
   border-radius: 2px;
 }
+.bhelp {
+  cursor: pointer;
+}

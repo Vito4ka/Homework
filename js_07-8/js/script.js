@@ -11,6 +11,12 @@
         })
     }
 //-----------Second part--------------------------------
+  $('form').after('<button class="bhelp" role="button"><span>Show help</span></button>')
+  $('.bhelp').click(function(){
+  $('.info').css("display", "block")
+})
+
+
   $('input').each(function() {
     var el = $(this);
     var title = el.attr('title');
@@ -39,5 +45,4 @@
       });
     }
   })
-
 })(jQuery)

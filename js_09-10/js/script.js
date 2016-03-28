@@ -1,6 +1,19 @@
 (function($) {
     $(function() {
-        //$('select#default-usage-select').selectbox();
+
+        $('.newcolor').mouseenter(
+          function () {
+        	$(this).animate({
+        		backgroundColor:"#03C",
+            }, 500 );
+        });
+        $('.newcolor').mouseleave(function() {
+        	$(this).animate({
+        		backgroundColor:"#0CF",
+            }, 500 );
+        });
+
+
 
         $('.jcarousel').jcarousel();
 
