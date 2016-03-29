@@ -1,16 +1,17 @@
 (function($) {
     $(function() {
 
-        $('.newcolor').mouseenter(
+        $('.content li').mouseenter(
           function () {
         	$(this).animate({
-        		backgroundColor:"#03C",
-            }, 500 );
+	backgroundColor:"#0CF"
+}, 500 );
+
         });
-        $('.newcolor').mouseleave(function() {
+        $('.content li').mouseleave(function() {
         	$(this).animate({
-        		backgroundColor:"#0CF",
-            }, 500 );
+	backgroundColor:"#ff6464"
+}, 500 );
         });
 
 
