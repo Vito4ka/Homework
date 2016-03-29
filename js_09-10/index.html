@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/nicecheck.css">
     <link rel="stylesheet" href="css/nav.css">
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
     <script src="js/jquery.selectbox-0.6.1.js"></script>
     <script src="js/nicecheck.js"></script>
     <script src="js/jquery.color.js"></script>
-    <script src="js/nav.js"></script>
     <script src="js/script.js"></script>
 
   </head>
@@ -58,21 +58,28 @@
         </ul>
       </nav>
       <h3>Carousel</h3>
-        <div class="jcarousel-wrapper">
-            <div data-jcarousel="true" class="jcarousel">
-        <ul>
-          <li><img src="img/img1.jpg" alt=""></li>
-          <li><img src="img/img2.jpg" alt=""></li>
-          <li><img src="img/img3.jpg" alt=""></li>
-          <li><img src="img/img4.jpg" alt=""></li>
-          <li><img src="img/img5.jpg" alt=""></li>
-          <li><img src="img/img6.jpg" alt=""></li>
-        </ul>
-      </div>
-      <a data-jcarouselcontrol="true" href="#" class="jcarousel-control-prev">‹</a>
-      <a data-jcarouselcontrol="true" href="#" class="jcarousel-control-next">›</a>
+      <div class="jcarousel-wrapper">
+        <div data-jcarousel="true" class="jcarousel">
+          <ul>
+            <li><img src="img/img1.jpg" alt=""></li>
+            <li><img src="img/img2.jpg" alt=""></li>
+            <li><img src="img/img3.jpg" alt=""></li>
+            <li><img src="img/img4.jpg" alt=""></li>
+            <li><img src="img/img5.jpg" alt=""></li>
+            <li><img src="img/img6.jpg" alt=""></li>
+          </ul>
+        </div>
+        <a data-jcarouselcontrol="true" href="#" class="jcarousel-control-prev">‹</a>
+        <a data-jcarouselcontrol="true" href="#" class="jcarousel-control-next">›</a>
 
-      <p data-jcarouselpagination="true" class="jcarousel-pagination"><a class="" href="#1">1</a><a class="active" href="#2">2</a><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><a href="#6">6</a></p>
+        <p data-jcarouselpagination="true" class="jcarousel-pagination">
+          <a class="" href="#1">1</a>
+          <a class="active" href="#2">2</a>
+          <a href="#3">3</a>
+          <a href="#4">4</a>
+          <a href="#5">5</a>
+          <a href="#6">6</a>
+        </p>
     </div>
 
     <h3>jQuery custom selectbox</h3>
@@ -91,8 +98,9 @@
         </select>
         <div class="clr"></div>
       </div>
+    </div>
+
       <h3>jQuery нестандартный чекбокс</h3>
-      </div>
       <div class="clr check">
         <div><label for="ch1">label 1</label><input type="checkbox" class="niceCheck" id="ch1" tabindex="1" /> </div>
         <div><label for="ch2">label 2</label><input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" /></div>
@@ -126,5 +134,5 @@
 
 
       </div>
-</body>
+  </body>
 </html>
