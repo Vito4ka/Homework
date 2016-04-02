@@ -2,11 +2,15 @@
     <meta charset="UTF-8">
     <title>js_11-12 Теплова Виктория</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/jquery.carousel.js"></script>
+    <script src="js/tmpl.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
    </head>
 <body>
+  <section id="carousel">
     <div class="leftBtn"><span>Влево</span></div>
     <div class="carousel-hider">
         <ul class="carousel">
@@ -25,5 +29,34 @@
         </ul>
     </div>
     <div class="rightBtn"><span>Вправо</span></div>
+  </section>
+    <div class="wraper">
+       <div class="box1">
+         <div class="lang" id='en'><span>English</span></div>
+         <div class="lang" id='ru'><span>Русский</span></div>
+         <script type="text/template" id="test">
+           <div id="data">
+          <h2><%= name %></h2>
+          <img src="img/img1.jpg" alt="teplova vs" class="center"/>
+          <p><%= char1 %></p>
+          <hr>
+          <p><%= target %></p>
+          <ul>
+             <li><%= reson1 %></li>
+             <li><%= reson2 %></li>
+             <li><%= reson3 %></li>
+          </ul>
+          <hr>
+          <p><%= phone %></p>
+          +380501847095<br><br>
+          <p><%= cont %></p>
+          <a href="#"><%= href %></a>
+          <hr>
+          <p><%= myf %></p>
+          <p><%= problems %></p>
+          </div>
+          </script>
+       </div>
+    </div>
 
 </body>

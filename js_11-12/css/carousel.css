@@ -1,0 +1,48 @@
+.leftBtn, .rightBtn {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.leftBtn:hover, .rightBtn:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.leftBtn {
+    margin-right: 25px;
+}
+
+.rightBtn {
+    margin-left: 25px;
+}
+.carousel-hider {
+    width: 600px;
+    overflow: hidden;
+    float: left;
+}
+.carousel {
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+
+.carousel-element {
+   display: block;
+   margin-right: 25px;
+   float: left;
+}
+
+.carousel-element img {
+   width: 100px;
+   height: 100px;
+   margin: 0;
+   padding: 0;
+}
+.leftBtn, .rightBtn {
+    float: left;
+}

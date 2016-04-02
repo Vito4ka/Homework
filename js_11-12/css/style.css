@@ -1,46 +1,53 @@
-.leftBtn, .rightBtn {
-    float: left;
-    display: block;
-    border: 1px solid grey;
-    background-color: lightgrey;
-    padding: 5px;
-    margin-top: 50px;
+body {
+  width: 1440px;
+  margin: auto;
+  background-color: rgb(238, 238, 238);
+  font-size: 18px;
 }
-
-.leftBtn:hover, .rightBtn:hover {
-    cursor: pointer;
-    background-color: grey;
+#carousel {
+  width: 840px;
+  height: 200px;
+  margin: 0 auto;
 }
-
-.leftBtn {
-    margin-right: 25px;
+.wraper {
+  width: 513px;
+  margin: 5px auto;
+  padding:30px 10px;
+  background-color: white;
 }
-
-.rightBtn {
-    margin-left: 25px;
+.box1 {
+  margin: 10px 70px;
 }
-.carousel-hider {
-    width: 600px;
-    overflow: hidden;
-    float: left;
+.lang {
+  width: 70px;
+  background-color: #eee;
+  border: 1px solid grey;
+  margin: 5px auto;
+  cursor: pointer;
 }
-.carousel {
-    list-style: none;
-    width: 10000px;
-    padding: 0px;
-    position: relative;
+h2 {
+  text-align: center;
+  font-size: 20px;
 }
-
-.carousel-element {
-   display: block;
-   margin-right: 25px;
-   float: left;
+img {
+  width: 150px;
+  padding: 10px;
 }
-
-.carousel-element img {
-   width: 100px;
-   height: 100px;
+p {
+  padding-left: 0px;
 }
-.leftBtn, .rightBtn {
-    float: left;
+ul {
+  margin-top: 20px;
+  padding-left: 40px;
+}
+hr {
+  height: 1px; /* Толщина линии */
+  margin: 20px -20px;
+  border: none; /* Убираем границу */
+  background-color: black; /* Цвет линии */
+  color:black; /* Цвет линии для IE6-7 */
+}
+.center {
+  display:block;
+  margin:0 auto;
 }

@@ -1,9 +1,6 @@
   $(function() {
 
-$('.carousel').carousel({
-  delay: 500,
-})
-
-
-
-  });
+    $('.carousel').carousel({
+      delay: 500,
+  })
+});
