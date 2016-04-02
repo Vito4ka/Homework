@@ -1,4 +1,4 @@
-.carousel-arrow-left, .carousel-arrow-right {
+.leftBtn, .rightBtn {
     float: left;
     display: block;
     border: 1px solid grey;
@@ -7,16 +7,16 @@
     margin-top: 50px;
 }
 
-.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+.leftBtn:hover, .rightBtn:hover {
     cursor: pointer;
     background-color: grey;
 }
 
-.carousel-arrow-left {
+.leftBtn {
     margin-right: 25px;
 }
 
-.carousel-arrow-right {
+.rightBtn {
     margin-left: 25px;
 }
 .carousel-hider {
@@ -24,7 +24,7 @@
     overflow: hidden;
     float: left;
 }
-.carousel-list {
+.carousel {
     list-style: none;
     width: 10000px;
     padding: 0px;
@@ -41,6 +41,6 @@
    width: 100px;
    height: 100px;
 }
-.carousel-arrow-left, .carousel-arrow-right {
+.leftBtn, .rightBtn {
     float: left;
 }
