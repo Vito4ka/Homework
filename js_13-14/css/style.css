@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #ddd;
+}
+body {
+  width: 800px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  background-color: white;
+  font-family: Arial, Tahoma;
+  font-size: 19px;
+  line-height: 40px;
+}
+p {
+  padding-top: 13px;
+  text-align: center;
+}
+ol {
+  padding-top: 26px;
+  padding-left: 115px;
+}
+ul {
+  font-size: 16px;
+  line-height: 25px;
+  list-style: none;
+}
+.button {
+  display: block;
+  text-align: center;
+  margin: 48px auto;
+  font-size: 19px;
+  padding: 14px 40px;
+  background-color: #cfe1f5;
+}
