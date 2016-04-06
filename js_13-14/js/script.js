@@ -12,7 +12,7 @@
           correct: false
         },
         {
-          text: 'Вариант ответа №2',
+          text: 'Правильный вариант ответа №2',
           correct: true
         },
         {
@@ -29,7 +29,7 @@
           correct: false
         },
         {
-          text: 'Вариант ответа №2',
+          text: 'Правильный вариант ответа №2',
           correct: true
         },
         {
@@ -46,7 +46,7 @@
           correct: false
         },
         {
-          text: 'Вариант ответа №2',
+          text: 'Правильный вариант ответа №2',
           correct: true
         },
         {
@@ -65,7 +65,7 @@ var saved = JSON.parse(test);
 //Name of test----------------------------
 var html = $('#nameTest').html();
 var content = tmpl(html, saved);
-$('body').append(content);
+$('.md-modal').before(content);
 
 var htmlQuestion=$('#question').html();
 var htmlAnswer=$('#answer').html();
@@ -80,18 +80,39 @@ for (var i = 0; i < saved.questions.length; i++) {
     for (var j = 0; j < saved.questions[i].answers.length; j++) {
     var  str = {};
       str.form = 'a'+i;
-      str.value = 10 * i+j;
+      str.id = 10 * i+j;
       str.text = saved.questions[i].answers[j].text;
-      console.log(str);
       contentAnswer += tmpl(htmlAnswer, str);
     };
   $('ol > li:last-child > ul').append(contentAnswer);
 };
+//Check form ------------------------------
+$('.md-trigger').click(function(){
+  var count=0;
+  for ( i = 0; i < saved.questions.length; i++) {
+    for (j = 0; j <saved.questions[i].answers.length; j++) {
+    id = '#'+(10*i+j);
+    count += $(id).prop("checked")*saved.questions[i].answers[j].correct;
+    }
+  }
+  $('.md-content p').html('Количество правильных ответов - '+ count);
+  $('.md-modal').addClass('md-show');
+  $('.md-overlay').addClass('md-show');
+//  alert('Количество правильных ответов - '+ count);
+  event.preventDefault();
+/*$('.md-overlay').fadeIn(400,
+function(){
+  $('.md-modal')
+    .css('display', 'block')
+      .animate({opacity: 1, top: '50%'}, 200);
+    });*/
+});
+//---------------------------------------
+$(".md-close").click(function() {
+  $('.md-modal').removeClass('md-show');
+  $('.md-overlay').removeClass('md-show');
 
-$('.button').click(function(){
-var ch= $("input:radio:checked");
-console.log(ch);
-alert(ch);
+              location.reload();
 });
 });
 })(jQuery);

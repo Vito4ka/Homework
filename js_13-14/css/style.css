@@ -28,7 +28,7 @@ ul {
   line-height: 25px;
   list-style: none;
 }
-.button {
+.md-trigger {
   display: block;
   text-align: center;
   margin: 48px auto;
