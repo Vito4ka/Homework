@@ -87,7 +87,7 @@ for (var i = 0; i < saved.questions.length; i++) {
   $('ol > li:last-child > ul').append(contentAnswer);
 };
 //Check form ------------------------------
-$('.md-trigger').click(function(){
+$('.md-trigger').click(function(event){
   var count=0;
   for ( i = 0; i < saved.questions.length; i++) {
     for (j = 0; j <saved.questions[i].answers.length; j++) {
