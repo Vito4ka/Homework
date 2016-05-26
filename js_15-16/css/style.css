@@ -1,0 +1,44 @@
+body {
+  font-family: Verdana, sans-serif;
+}
+#search {
+  text-align: center;
+}
+#search_form {
+  padding: 30px;
+  margin: 0 auto;
+  display: inline-block;
+}
+#search_form input{
+  font-size: 18px;
+  padding: 5px 15px;
+  margin: 0 auto;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  color: #aaa;
+}
+#search_input {
+  width: 600px;
+}
+#search_button {
+  background: #eee;
+  ;
+}
+#searchOutput {
+  width: 85%;
+  margin: 5px auto;
+}
+.searchItem {
+  color: #555;
+  margin: 25px 0;
+}
+.searchItem__link {
+  font-size: 14px;
+  color: #3a3;
+  margin: 4px 0;;
+}
+.searchItem__description {
+  font-size: 12px;
+  margin: 4px 0;
+}
