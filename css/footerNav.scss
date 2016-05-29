@@ -1,0 +1,38 @@
+.footerNav {
+  height: 328px;
+  background-color: $dark-background;
+}
+
+.menu {
+  float: left;
+}
+.menu:not(:last-child) {
+  margin-right: 40px;
+}
+.menu__header {
+  padding-top: 63px;
+  padding-bottom: 49px;
+  font-family: 'Ubuntu Medium', Verdana, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+.menu__link {
+  text-decoration: none;
+  color: inherit;
+  width: 260px;
+  height: 36px;
+  line-height: 36px;
+  float: left;
+  color: #6e6f72;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  transition: color .3s;
+}
+
+.menu__link:hover {
+  color: $blue-highlight;
+}
+
+.menu__listItem:not(:last-child) .menu__link {
+  border-bottom: 1px solid #393c40;
+}

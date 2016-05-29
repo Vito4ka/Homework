@@ -1,0 +1,61 @@
+.summary__item {
+  height: 300px;
+  width: $wrapper-width / 3;
+  float: left;
+}
+
+.summary__number {
+  color: #efeff0;
+  font-family: "Ubuntu Medium", Verdana, sans-serif;
+  font-size: 90px;
+  padding-top: 20px;
+  float: left;
+}
+.summary__description {
+  padding-top: 32px;
+  float: right;
+  width: 256px;
+}
+
+
+.summary__description i {
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    font-size: 30px;
+    color: #ffaa22;
+  }
+.summary__header {
+  color: $dark-font;
+  font-size: 20px;
+  font-family: "Ubuntu Medium", Verdana, sans-serif;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.summary__text {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #8a8a8a;
+  margin-bottom: 25px;
+}
+.summary__link {
+  display: block;
+  color: $dark-font;
+  font-size: 13px;
+  font-family: "Ubuntu Medium", Verdana, sans-serif;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.summary__link:hover {
+  color: $blue-highlight;
+}
+.summary__link:hover i {
+  color: $dark-font;
+}
+.summary__link i {
+  font-size: 17px;
+  color: $blue-highlight;
+  transition: color .3s;
+}
