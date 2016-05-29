@@ -1,0 +1,89 @@
+.newsAndBanners {
+  background-color: #f7f7f7;
+  height: 542px;
+}
+
+.news {
+  width: 50%;
+  float: left;
+}
+
+.news__header {
+  font-family: 'Ubuntu Medim', Verdana, sans-serif;
+  font-size: 24px;
+  color: $dark-background;
+  padding: 65px 0 50px 5px;
+}
+
+.news__picture {
+  float: left;
+  margin-right: 35px;
+}
+
+.news__caption {
+  font-family: 'Ubuntu Medium', Verdana, sans-serif;
+  font-size: 16px;
+  color: $dark-background;
+  padding-top: 10px;
+}
+
+.news__comments {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: $gray-font;
+  padding: 10px 0 28px 0;
+}
+
+.news__description {
+  @extend .news__comments;
+  padding: 0;
+}
+
+.news__link {
+  text-decoration: none;
+  color: $dark-background;
+  transition: color .3s;
+}
+
+.news__link:hover {
+  color: $news-link;
+}
+
+.news__link--comments {
+  color: $news-link;
+}
+
+.news__link--comments:hover {
+  color: $orange-highlight;
+}
+
+.news__item {
+  position: relative;
+}
+
+.news__item:before {
+  content: attr(data-month);
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 12px;
+  left: -20px;
+  background-color: $blue-highlight;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-family: 'Ubuntu Medium', Verdana, sans-serif;
+  font-size: 15px;
+}
+
+.news__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.news__item:after {
+  @extend .news__item:before;
+  content: attr(data-day);
+  top: 52px;
+  background-color: $orange-highlight;
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teplova js19-20</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/dist/main.css">
+</head>
+
+<body>
+  <header>
+      <div class="header_top">
+        <img src="img/logo.png" alt="Build Home" class="header__logo">
+        <ul class="social">
+          <li class="header__iconListItem">
+            <a href="#" class="header__iconLink">
+              <i class="icon-facebook"></i>
+            </a>
+          </li>
+          <li class="header__iconListItem">
+            <a href="#" class="header__iconLink">
+              <i class="icon-twitter"></i>
+            </a>
+          </li>
+          <li class="header__iconListItem">
+            <a href="#" class="header__iconLink">
+              <i class="icon-rss"></i>
+            </a>
+          </li>
+          <li class="header__iconListItem">
+            <a href="#" class="header__iconLink">
+              <i class="icon-linkedin"></i>
+            </a>
+          </li>
+          <li class="header__iconListItem">
+            <a href="#" class="header__iconLink">
+              <i class="icon-skype"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__menuList">
+          <li class="header__menuListItem header__menuListItem--active"><a href="#" class="header__menuLink">HOME</a></li>
+          <li class="header__menuListItem"><a href="#" class="header__menuLink">FEATURES</a></li>
+          <li class="header__menuListItem"><a href="#" class="header__menuLink">SERVICES</a></li>
+          <li class="header__menuListItem"><a href="#" class="header__menuLink">NEWS</a></li>
+          <li class="header__menuListItem"><a href="#" class="header__menuLink">SHOP</a></li>
+        </ul>
+        <form action="" class="header__searchForm">
+          <input type="text" name="header__searchField" id="header__searchField" placeholder="Search...">
+        </form>
+      </nav>
+
+      <section class="awSlider">
+        <div class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target=".carousel" data-slide-to="0" class="active"></li>
+            <li data-target=".carousel" data-slide-to="1"></li>
+            <li data-target=".carousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/promo.png">
+              <div id="slide1" class="text">
+                  <div class="text__item"><span class="first">BUILD</span></div>
+                  <div class="text__item"><span class="second">YOUR</span></div>
+                  <div class="text__item"><span class="third">BUISNESS</span></div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/vesna.jpg">
+              <div id="slide2" class="text">
+                  <div class="text__item"><span class="second">DON'T</span></div>
+                  <div class="text__item"><span class="third">WORRY</span></div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/flowers.jpg">
+              <div id="slide3" class="text">
+                  <div class="text__item"><span class="second">BE</span></div>
+                  <div class="text__item"><span class="third">HAPPY</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Geri</span>
+          </a>
+          <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">İleri</span>
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <div class="wrapper clearfix">
+        <section class="summary clearfix">
+          <div class="summary__item">
+            <div class="summary__number">01</div>
+            <div class="summary__description"><i class="icon-cog"></i>
+              <h3 class="summary__header">Power Inside</h3>
+              <p class="summary__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+              <div class="summary__readmore">
+                <a href="#" class="summary__link">
+                  Read More
+                  <i class="icon-right-small"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="summary__item">
+            <div class="summary__number">02</div>
+            <div class="summary__description"><i class="icon-params"></i>
+              <h3 class="summary__header">New Technologies</h3>
+              <p class="summary__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+              <div class="summary__readmore">
+                <a href="#" class="summary__link">
+                  Read More
+                  <i class="icon-right-small"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="summary__item">
+            <div class="summary__number">03</div>
+            <div class="summary__description"><i class="icon-truck"></i>
+              <h3 class="summary__header">Fast Support</h3>
+              <p class="summary__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</p>
+              <div class="summary__readmore">
+                <a href="#" class="summary__link">
+                  Read More
+                  <i class="icon-right-small"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+    <section class="ourServices">
+      <div class="wrapper clearfix">
+        <h4 class="ourServices__header">Our services</h4>
+        <a href="#" class="ourServices__link">
+          <figure class="ourServices__figure">
+            <img src="img/schedule.png" alt="Schedule Services" class="ourServices__image" />
+            <figcaption class="ourServices__figcaption">Schedule Services</figcaption>
+            <div class="ourServices__plus">+
+            </div>
+          </figure>
+        </a>
+        <a href="#" class="ourServices__link">
+          <figure class="ourServices__figure">
+            <img src="img/preventive.png" alt="Preventive Maintence" class="ourServices__image" />
+            <figcaption class="ourServices__figcaption">Preventive Maintence</figcaption>
+            <div class="ourServices__plus">+
+            </div>
+          </figure>
+        </a>
+        <a href="#" class="ourServices__link">
+          <figure class="ourServices__figure">
+            <img src="img/tyre.png" alt="Tire & Wheel Services" class="ourServices__image" />
+            <figcaption class="ourServices__figcaption">Tire & Wheel Services</figcaption>
+            <div class="ourServices__plus">+
+            </div>
+          </figure>
+        </a>
+        <a href="#" class="ourServices__link">
+          <figure class="ourServices__figure">
+            <img src="img/repair.png" alt="Repair Services" class="ourServices__image" />
+            <figcaption class="ourServices__figcaption">Repair Services</figcaption>
+            <div class="ourServices__plus">+
+            </div>
+          </figure>
+        </a>
+      </div>
+    </section>
+    <section class="newsAndBanners">
+      <div class="wrapper clearfix">
+        <div class="news">
+          <h2 class="news__header">Latest News</h2>
+          <article class="news__item" data-month="Jan" data-day="23">
+            <img src="img/news_1.png" alt="figures" class="news__picture">
+            <h3 class="news__caption"> <a href="#" class="news__link">Advanced Machinery Helps Improve Quality</a></h3>
+            <p class="news__comments">by <a href="#" class="news__link news__link--comments">cmsmasters</a> Comments (<a href="#" class="news__link news__link--comments">6</a>)</p>
+            <p class="news__description">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+          </article>
+          <article class="news__item" data-month="Jan" data-day="21">
+            <img src="img/news_2.png" alt="figures" class="news__picture">
+            <h3 class="news__caption"> <a href="#" class="news__link">Powerful Techniques for Advanced Service</a></h3>
+            <p class="news__comments">by <a href="#" class="news__link news__link--comments">cmsmasters</a> Comments (<a href="#" class="news__link news__link--comments">3</a>)</p>
+            <p class="news__description">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+          </article>
+        </div>
+        <div class="banners">
+          <h2 class="banners__mainHeader">Banners Place</h2>
+          <label class="banners__panel banners__panel--1" for="banners__accordion--1">
+            <input type="radio" name="banners__accordion" id="banners__accordion--1" value="1" class="banners__radio" checked>
+            <h2 class="banners__header">ACCORDION PANEL 1</h2>
+            <div class="banners__status">
+              <div class="banners__statusLine banners__statusLine--hor"></div>
+              <div class="banners__statusLine banners__statusLine--ver"></div>
+            </div>
+            <p class="banners__text">
+              Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem
+              quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+            </p>
+          </label>
+          <label class="banners__panel banners__panel--2" for="banners__accordion--2">
+            <input type="radio" name="banners__accordion" id="banners__accordion--2" value="2" class="banners__radio">
+            <h2 class="banners__header">ACCORDION PANEL 2</h2>
+            <div class="banners__status">
+              <div class="banners__statusLine banners__statusLine--hor"></div>
+              <div class="banners__statusLine banners__statusLine--ver"></div>
+            </div>
+            <p class="banners__text">
+              Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem
+              quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+            </p>
+          </label>
+          <label class="banners__panel banners__panel--3" for="banners__accordion--3">
+            <input type="radio" name="banners__accordion" id="banners__accordion--3" value="3" class="banners__radio">
+            <h2 class="banners__header">ACCORDION PANEL 3</h2>
+            <div class="banners__status">
+              <div class="banners__statusLine banners__statusLine--hor"></div>
+              <div class="banners__statusLine banners__statusLine--ver"></div>
+            </div>
+            <p class="banners__text">
+              Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem
+              quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+            </p>
+          </label>
+          <label class="banners__panel banners__panel--4" for="banners__accordion--4">
+            <input type="radio" name="banners__accordion" id="banners__accordion--4" value="4" class="banners__radio">
+            <h2 class="banners__header">ACCORDION PANEL 4</h2>
+            <div class="banners__status">
+              <div class="banners__statusLine banners__statusLine--hor"></div>
+              <div class="banners__statusLine banners__statusLine--ver"></div>
+            </div>
+            <p class="banners__text">
+              Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem
+              quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+            </p>
+          </label>
+        </div>
+      </div>
+    </section>
+    <section class="logos">
+      <div class="wrapper wrapper--logos clearfix">
+        <a href="#" class="logos__logo"><img src="img/rbp.png" alt="RBP"></a>
+        <a href="#" class="logos__logo"><img src="img/moto.png" alt="moto"></a>
+        <a href="#" class="logos__logo"><img src="img/2crave.png" alt="2 crave"></a>
+        <a href="#" class="logos__logo"><img src="img/atx.png" alt="atx"></a>
+        <a href="#" class="logos__logo"><img src="img/cruiser.png" alt="cruiser"></a>
+        <a href="#" class="logos__logo"><img src="img/gear.png" alt="gear"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footerNav">
+      <div class="wrapper clearfix">
+        <nav class="menu">
+          <h4 class="menu__header">SOCIALS</h4>
+          <ul class="menu__list clearfix">
+            <li class="menu__listItem"><a href="#" class="menu__link">Facebook</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">Flickr</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">Twitter</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">Vimeo</a></li>
+          </ul>
+        </nav>
+        <nav class="menu">
+          <h4 class="menu__header">LINKS</h4>
+          <ul class="menu__list clearfix">
+            <li class="menu__listItem"><a href="#" class="menu__link">How to Write a Blog</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">Create a Blog in 4 Steps</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">15 Tips to Increase Traffic</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">20 Blog Post Ideas</a></li>
+          </ul>
+        </nav>
+        <nav class="menu">
+          <h4 class="menu__header">BLOGROLL</h4>
+          <ul class="menu__list clearfix">
+            <li class="menu__listItem"><a href="#" class="menu__link">Blogs Blog</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">Roll Up Roll Up</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">Blog -e</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">Wordpress Blog</a></li>
+          </ul>
+        </nav>
+        <nav class="menu">
+          <h4 class="menu__header">ABOUT US</h4>
+          <ul class="menu__list clearfix">
+            <li class="menu__listItem"><a href="#" class="menu__link">Agriculture</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">Harvest</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">Company news</a></li>
+            <li class="menu__listItem"><a href="#" class="menu__link">Investor relations</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="wrapper wrapper--contacts clearfix">
+        <div class="contacts__block"><a href="#" class="contacts__link"><i class="icon-location"></i>BuildHomeLtd.  Street Name 123   23 45 Cityname</a></div>
+        <div class="contacts__block"><a href="tel:+123 900 123 456" class="contacts__link"><i class="icon-mobile"></i>+123 900 123 456</a></div>
+        <div class="contacts__block"><a href="mailto:info@buildhome.web" class="contacts__link"><i class="icon-mail"></i>info@buildhome.web</a></div>
+        <div class="contacts__block"><a href="#" class="contacts__link">© 2014 Build Home</a></div>
+      </div>
+    </section>
+
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
+
+</script>
+  <script src="js/dist/script.min.js" charset="utf-8"></script>
+</body>
+
+</html>

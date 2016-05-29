@@ -1,0 +1,18 @@
+.logos {
+  height: 240px;
+}
+
+.wrapper--logos {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos__logo:not(:last-child) {
+  margin-right: 25px;
+}
