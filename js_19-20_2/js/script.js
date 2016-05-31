@@ -275,7 +275,7 @@ var input = [
 ];
 
 var dataJson = JSON.parse(JSON.stringify(input));
-var skills = _.sortBy(_.union(_.flatMap(dataJson, 'skills')));
+var skills = _.sortBy(_.union(_.flatMap(dataJson, 'skills')), function(o) { return o.toLowerCase()});
 var names =  _.flatMap(_.sortBy(dataJson, 'friends'), 'name');
 var friends = _.union(_.flatMap(_.flatMap(dataJson, 'friends'), 'name'));
 
