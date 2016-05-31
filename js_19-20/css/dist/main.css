@@ -226,6 +226,87 @@ section.awSlider > img {
   bottom: 40px;
   padding: 10px 30px 11px 30px; }
 
+.banners {
+  width: 50%;
+  float: right; }
+  .banners .ac-container {
+    float: left;
+    width: 520px;
+    margin-left: 40px; }
+    .banners .ac-container input {
+      left: 0px;
+      width: 40px;
+      height: 38px;
+      background: url(../../img/arrow_down.png) no-repeat center center; }
+    .banners .ac-container label {
+      position: relative;
+      padding-top: 2px;
+      margin-top: 5px;
+      display: block;
+      padding-left: 55px;
+      border: 1px solid #e8e8e8;
+      text-transform: uppercase;
+      font: 13px  'Ubuntu Medium', Verdana, sans-serif;
+      z-index: 20;
+      height: 40px;
+      color: #777;
+      line-height: 33px;
+      background: url(../../img/arrow_down.png) no-repeat left center;
+      cursor: pointer;
+      transition: color .6s, background-color .6s; }
+      .banners .ac-container label span {
+        width: 28px;
+        height: 40px;
+        border-right: 2px solid #e8e8e8;
+        top: 0;
+        left: 12px;
+        position: absolute;
+        transition: border-right-color .6s;
+        font-size: 22px; }
+        .banners .ac-container label span .viz1 {
+          display: none; }
+        .banners .ac-container label span .viz2 {
+          display: block; }
+    .banners .ac-container label:hover {
+      background: #fff; }
+    .banners .ac-container input:checked + label {
+      color: white;
+      background: #f4b60d;
+      transition: color .6s, background-color .6s; }
+    .banners .ac-container input:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 0px;
+      width: 40px;
+      height: 35px;
+      background: url(../../img/arrow_up_hover.png) no-repeat center center; }
+    .banners .ac-container input {
+      display: none; }
+    .banners .ac-container article {
+      position: relative;
+      height: 0px;
+      margin-top: -1px;
+      padding: 0 0 0 30px;
+      -webkit-transition: height 0.6s, padding .6s;
+      -moz-transition: height 0.6s, padding .6s;
+      -o-transition: height 0.6s, padding .6s;
+      -ms-transition: height 0.6s, padding .6s;
+      transition: height 0.6s, padding .6s;
+      z-index: 10;
+      overflow: hidden; }
+      .banners .ac-container article p {
+        display: block;
+        color: #8a8a8a;
+        font: 13px Arial; }
+    .banners .ac-container input:checked ~ article {
+      height: 140px;
+      padding: 30px 0 0 30px;
+      -webkit-transition: height 0.6s padding .6s;
+      -moz-transition: height 0.6s padding .6s;
+      -o-transition: height 0.6s padding .6s;
+      -ms-transition: height 0.6s padding .6s;
+      transition: height 0.6s padding .6s; }
+
 .contacts {
   height: 60px;
   background-color: #35383c;
@@ -586,7 +667,7 @@ a.header__iconLink:hover i {
   width: 50%;
   float: left; }
 
-.news__header, .banners__mainHeader {
+.news__header, .banners__mainHeader, .banners .banners__mainHeader {
   font-family: 'Ubuntu Medim', Verdana, sans-serif;
   font-size: 24px;
   color: #2a2d32;
