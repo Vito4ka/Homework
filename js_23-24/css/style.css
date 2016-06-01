@@ -1,0 +1,52 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background: url('../img/back.jpg');
+	text-align: center;
+}
+.wrapper{
+	margin:20px auto;
+	width: 700px;
+}
+.controlls {
+	width: 300px;
+	float: left;
+	margin: 100px 100px 0 0;
+}
+.list{
+	list-style: none;
+}
+.item {
+	float: left;
+	width: 300px;
+}
+.list-item{
+  position: relative;
+	padding:10px;
+	margin:20px 0;
+	background-color: #99ff66;
+	cursor:pointer;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.item-value{
+	width: 99%;
+	height: 40px;
+
+}
+.item-add,.item-change{
+	width:50%;
+	float: left;
+	height: 40px;
+
+}
+.item-delete{
+	color:red;
+	display: block;
+	position: absolute;
+	right: -20px;
+	top:30%;
+	cursor:pointer;
+}

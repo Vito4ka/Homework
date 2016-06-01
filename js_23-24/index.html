@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Teplova js_23-24</title>
+       <link rel="stylesheet" href="css/style.css">
+
+
+	  <script data-main="js/main" src="js/require.js"></script>
+</head>
+<body>
+	  <div class="wrapper">
+			<div class="controlls">
+		   	<button class="item-add">Add</button>
+		    <button class="item-change">Change</button>
+				<input type="text" class="item-value">
+			</div>
+			<div class="item">
+			<ul class="list">
+			</ul>
+		</div>
+		</div>
+</body>
+<script type="text/template" id="wrapper">
+</script>
+<script type="text/template" id="list-template">
+	<% for (var i=0;i<data.length;i++){ %>
+		<li data-index="<%= i %>"class="list-item"><%= data[i] %><span data-index="<%= i %>" class="item-delete">X</span></li>
+		<% };%>
+	</script>
+</html>
