@@ -604,25 +604,11 @@ a {
   .gallery__h2--bottom {
     margin-top: 50px; }
 
-  #gallery__input {
-    display: inline-block;
-    margin-left: 23%;
-    width: 240px; }
-
-  #gallery__submit {
-    display: inline-block;
-    width: 160px;
-    margin-left: 7px; }
-
   .gallery__h4 {
     margin-bottom: 22px; } }
 @media only screen and (min-device-width: 1440px) {
   .gallery__h2--bottom {
     margin-top: 41px; }
-
-  #gallery__input {
-    margin-left: 29%;
-    width: 237px; }
 
   .gallery__h4 {
     margin-bottom: 39px; } }
