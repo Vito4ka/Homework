@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    .footer__h1,
+  .footer__h2,
+  .footer__companyWrapper,
+  .footer__logoWrapper {
+    float: left;
+  }
+  .footer__listItem,
+  .footer__list {
+    display: block;
+  }
+  .footer__h3 {
+    margin-left: 31px;
+  }
+  .footer__list {
+    text-align: left;
+  }
+  .footer__listItem {
+    margin: 0 0 10px 0;
+  }
+  .footer__h2--partners {
+    margin-left: 103px;
+  }
+  .footer__logo {
+    display: block;
+  }
+  .footer__logoWrapper {
+    margin-left: 122px;
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,50 @@
+.footer {
+  border-top: 4px solid $red;
+  text-align: center;
+  margin-top: 100px;
+  padding: 36px 0 33px;
+}
+.footer__logo {
+  @extend .montserrat;
+  display: block;
+  float: left;
+  width: 140px;
+  margin-right: 100px;
+  color: $red;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.footer__h2 {
+  color: $black;
+  color: #333;
+  font: bold 14px "Montserrat";
+  font-size: 14px;
+  letter-spacing: 0;
+}
+.footer__companyWrapper {
+  width: 80px;
+  margin-right: 80px;
+}
+.footer__list {
+  margin-bottom: 10px;
+    color: #333333;
+    font: bold 14px "Montserrat";
+  display: inline-block;
+  margin-top: 4px;
+}
+.footer__listItem {
+  @extend .footer__list;
+  @extend .roboto;
+  color: $grey;
+  font-size: 14px;
+  margin: 3px 5px;
+}
+.footer__h3 {
+  @extend .montserrat;
+  color: #ccc;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 14px;
+  letter-spacing: 1px;
+}

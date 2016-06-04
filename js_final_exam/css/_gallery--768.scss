@@ -1,0 +1,30 @@
+@media only screen and (min-device-width: 768px) {
+  $grid-width--2: 620px;
+  $grid-height: 310px;
+
+  .gallery__image--width2 {
+    width: $grid-width--2;
+  }
+  .gallery__pictures {
+    padding: 0;
+  }
+  .gallery__h2 {
+    margin-bottom: 20px;
+  }
+  .gallery__h2--bottom {
+    margin-top: 50px;
+  }
+  #gallery__input {
+    display: inline-block;
+    margin-left: 23%;
+    width: 240px;
+  }
+  #gallery__submit {
+    display: inline-block;
+    width: 160px;
+    margin-left: 7px;
+  }
+  .gallery__h4 {
+    margin-bottom: 22px;
+  }
+}

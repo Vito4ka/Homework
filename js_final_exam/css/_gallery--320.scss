@@ -1,0 +1,81 @@
+$grid-width: 300px;
+$grid-height: 310px;
+
+.grid {
+  max-width: 100%;
+}
+
+/* clearfix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gallery {
+  text-align: center;
+}
+.gallery__image {
+  margin: 0 20px 20px 0;
+  background-color: #1a1915;
+  width: $grid-width;
+  height: $grid-height;
+  float: left;
+  position: relative;
+  border-radius: 5px;
+  @extend .darken;
+  background-position: center;
+  background-size: cover;
+}
+.gallery__image--right {
+  margin-right: 0;
+}
+.gallery__h2 {
+  @extend .slider__h2;
+  padding-top: 36px;
+  line-height: 26px;
+}
+.gallery__text {
+  @extend .montserrat;
+  width: inherit;
+      height: inherit;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0 15px;
+  color: $white;
+  font-size: 22px;
+  text-align: center;
+}
+.gallery__pictures {
+  padding: 0 10px;
+}
+.gallery__h4 {
+  @extend .roboto;
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 9px;
+}
+.gallery__form {
+  display: inline-block;
+}
+.gallery__input {
+
+  width: 240px;
+      height: 40px;
+      background-color: #fff;
+      box-shadow: 0 1px #eee;
+      border: solid 1px #ccc;
+      padding: 0 15px;
+      box-sizing: border-box;
+      margin-right: 7px;
+  display: inline-block;
+  font-size: 14px;
+  @include border-radius(4px);
+  border: 1px solid #ccc;
+}
+.gallery__submit {
+  @extend .partners__seeOther;
+  display: inline-block;
+  width: 160px;
+  margin: 0;
+}

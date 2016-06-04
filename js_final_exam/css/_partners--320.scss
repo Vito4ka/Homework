@@ -1,0 +1,96 @@
+.partners {
+  text-align: center;
+}
+.partners__h2 {
+  @extend .slider__h2;
+  padding: 34px 20px 13px;
+  line-height: 27px;
+  letter-spacing: .2px;
+}
+.partners__person {
+  width: 220px;
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+  position: relative;
+  margin-bottom: 27px;
+  &:last-child {
+    margin-right: 0;
+}
+}
+.partners__link {
+  display: block;
+}
+.partners__photo {
+  width: 120px;
+  height: 120px;
+  @include border-radius(100%);
+  background-image: url(../img/partners/partner--1.png);
+  position: relative;
+}
+.partners__photo:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: $red;
+  background-image: url(../img/partners/tv.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  @include border-radius(100%);
+  border: 4px solid #fff;
+  bottom: -4px;
+  right: -4px;
+  box-sizing: border-box;
+}
+.partners__person--2 .partners__photo {
+  background-image: url(../img/partners/partner--2.png);
+}
+.partners__person--2 .partners__photo:after {
+  background-color: #1cd7ad;
+  background-image: url(../img/partners/tea.png);
+}
+.partners__person--3 .partners__photo {
+  background-image: url(../img/partners/partner--3.png);
+}
+.partners__person--3 .partners__photo:after {
+  background-color: #ffa507;
+  background-image: url(../img/partners/lab.png);
+}
+.partners__person--4 .partners__photo {
+  background-image: url(../img/partners/partner--4.png);
+}
+.partners__person--4 .partners__photo:after {
+  background-color: #4e73db;
+  background-image: url(../img/partners/plane.png);
+}
+.partners__link {
+  display: inline-block;
+}
+.partners__name {
+  @extend .slider__h2;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+.partners__description {
+  @extend .roboto;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666;
+}
+
+  .partners__seeOther {
+      width: 192px;
+      height: 40px;
+      @include border-radius(20px);
+      background-color: #fff;
+      border: 2px solid #ff4e50;
+      font: bold 14px/36px "Montserrat";
+      color: #ff4e50;
+      display: block;
+      text-align: center;
+      margin: 10px auto 0;
+      box-sizing: border-box;
+  }

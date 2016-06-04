@@ -1,0 +1,17 @@
+@media (min-width: 1440px) {
+  .header {
+    .wrapper {
+      padding: 0;
+    }
+        &__top {
+      padding: 0;
+    }
+  h2 {
+    margin-left: 14px;
+    letter-spacing: 1px;
+  }
+  &__link {
+    width: 223px;
+  }
+}
+}

@@ -1,0 +1,78 @@
+.header {
+  background: #1a1915 url("../img/header-bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 540px;
+  @extend .montserrat;
+  font-weight: bold;
+  color: $white;
+  text-align: center;
+  .wrapper {
+      width: 300px;
+      margin: 0 auto;
+    }
+  &__top {
+    text-align: center;
+    top: 39px;
+    height: 36px;
+  	position: relative;
+    color: $white;
+
+  }
+  &__logo {
+    font-weight:  bold;
+    font-size: 21px;
+    line-height: 36px;
+    &:hover {
+      color: blue;
+    }
+  }
+  &__login {
+  padding: 9px 17px;
+  font-size: 14px;
+    &:hover {
+      color: blue;
+    }
+    &:active {
+      color: blue;
+    }
+  }
+&__signup {
+  @extend .header__login;
+  @include border-radius(30px);
+  border: 2px solid $white;
+}
+&__signup:hover, &__login:hover {
+  color: blue;
+}
+&__signup:hover, &__login:hover {
+  color: green;
+}
+&__middle {
+	text-align: center;
+	margin-top: 195px;
+}
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  line-height: 34px;
+}
+h4 {
+  @extend .roboto;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 17px;
+  line-height: 19px;
+  white-space: pre-wrap;
+  padding: 0 45px;
+}
+&__link {
+  width: 285px;
+  margin: 0 auto;
+  padding: 13px;
+  display: block;
+  background: $red;
+  @include border-radius(30px);
+  font-size: 14px;
+}
+}
