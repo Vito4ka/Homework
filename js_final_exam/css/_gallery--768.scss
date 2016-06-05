@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 768px) {
+@media (min-width: 768px) {
   $grid-width--2: 620px;
   $grid-height: 310px;
 
@@ -17,4 +17,13 @@
   .gallery__h4 {
     margin-bottom: 22px;
   }
+}
+@media (max-width: 660px) {
+  .gallery__image--width2 {
+width: 300px;
+}
+.gallery__image {
+float: none;
+margin: 10px auto;
+}
 }

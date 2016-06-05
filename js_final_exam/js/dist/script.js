@@ -15632,13 +15632,12 @@ $(function() {
 })(jQuery, Modernizr);
 
 $(function() {
-  updatePictures('');
+  updatePictures('flowers');
 
   function updatePictures(input) {
     var API_KEY = '2652794-8cebb08b5e968b205ae0d687a';
     var URL = "https://pixabay.com/api/?key=" + API_KEY + "&q=" + encodeURIComponent(input) + "&order=latest&image_type=photo";
     $.getJSON(URL, function(data) {
-      console.log(data);
       if (parseInt(data.totalHits) > 0) {
         var html = $('#template').html();
         var tmpl = _.template(html);

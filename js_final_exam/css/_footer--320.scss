@@ -16,6 +16,7 @@
   letter-spacing: 1px;
 }
 .footer__h2 {
+  margin-bottom: 10px;
   color: $black;
   color: #333;
   font: bold 14px "Montserrat";
@@ -25,11 +26,17 @@
 .footer__companyWrapper {
   width: 80px;
   margin-right: 80px;
+  float: left;
+}
+.footer__partnersWrapper {
+  width: 80px;
+  margin: 0;
+  float: left;
 }
 .footer__list {
   margin-bottom: 10px;
     color: #333333;
-    font: bold 14px "Montserrat";
+    font: 14px "Montserrat";
   display: inline-block;
   margin-top: 4px;
 }
@@ -45,6 +52,21 @@
   color: #ccc;
   font-size: 10px;
   font-weight: bold;
-  margin-top: 14px;
   letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.footer__copyright {
+  float: right;
+}
+.footer__copyright-img {
+  background: url(../img/coryright.png);
+  width: 110px;
+  height: 24px;
+  float: right;
+  margin-top: 7px;
+  @include transition(transform .3s);
+}
+.footer__copyright-img:hover {
+  @include transition(transform .3s);
+  @include transform(scale(1.3));
 }

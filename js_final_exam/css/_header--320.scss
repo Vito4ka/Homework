@@ -67,12 +67,15 @@ h4 {
   padding: 0 45px;
 }
 &__link {
-  width: 285px;
-  margin: 0 auto;
-  padding: 13px;
-  display: block;
+  @extend .montserrat;
+  margin: 20px auto;
+  padding: 12px 26px;
+  display: inline-block;
   background: $red;
-  @include border-radius(30px);
+  color: $white;
+  border: 2px solid #ff4e50;
+  @include border-radius(26px);
   font-size: 14px;
+  box-sizing: border-box;
 }
 }

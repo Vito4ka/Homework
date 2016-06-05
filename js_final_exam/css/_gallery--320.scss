@@ -74,8 +74,6 @@ $grid-height: 310px;
   border: 1px solid #ccc;
 }
 .gallery__submit {
-  @extend .partners__seeOther;
-  display: inline-block;
-  width: 160px;
+  @extend .header__link;
   margin: 0;
 }
